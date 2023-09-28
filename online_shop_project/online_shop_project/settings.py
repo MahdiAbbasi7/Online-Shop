@@ -122,3 +122,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+git remote set-url origin https://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@github.com/MahdiAbbasi7/Online-Shop
