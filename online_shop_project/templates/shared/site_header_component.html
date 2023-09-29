@@ -25,43 +25,43 @@
 			</div>
 		</div><!--/header_top-->
 
-		<div class="header-middle"><!--header-middle-->
-			<div class="container">
-				<div class="row">
-					<!-- <div class="col-sm-4 header-middle-menu">
-						<div class="shop-menu pull-left">
-							<ul class="nav navbar-nav">
-								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> پرداخت</a></li>
-							</ul>
-						</div>
-					</div> -->
-
-					<div class="col-sm-4" style="text-align: left;">
-						<div class="logo">
-							<a href=""><img src="{{ site_setting.logo.url }}" alt="Logo" style="text-align: center;" /></a>
-						</div>
-					</div>
-
-					<div class="col-sm-8 header-middle-menu">
-						<div class="shop-menu pull-right">
-							<ul class="nav navbar-nav">
-                                {% if request.user.is_authenticated %}
-                                    {% if request.user.is_superuser %}
+{#	    	<div class="header-middle"><!--header-middle-->#}
+{#			<div class="container">#}
+{#				<div class="row">#}
+{#					<!-- <div class="col-sm-4 header-middle-menu">#}
+{#						<div class="shop-menu pull-left">#}
+{#							<ul class="nav navbar-nav">#}
+{#								<li><a href="checkout.html"><i class="fa fa-crosshairs"></i> پرداخت</a></li>#}
+{#							</ul>#}
+{#						</div>#}
+{#					</div> -->#}
+{##}
+{#					<div class="col-sm-4" style="text-align: left;">#}
+{#						<div class="logo">#}
+{#							<a href=""><img src="{{ site_setting.logo.url }}" alt="Logo" style="text-align: center;" /></a>#}
+{#						</div>#}
+{#					</div>#}
+{##}
+{#					<div class="col-sm-8 header-middle-menu">#}
+{#						<div class="shop-menu pull-right">#}
+{#							<ul class="nav navbar-nav">#}
+{#                                {% if request.user.is_authenticated %}#}
+{#                                    {% if request.user.is_superuser %}#}
 {#                                        <li><a href="{% url 'admin' %}"><i class="fa fa-shopping-cart"></i> پنل ادمین</a></li>#}
-                                    {% endif %}
-                                    <li><a href="{% url 'user_basket_page' %}"><i class="fa fa-shopping-cart"></i> سبد خرید</a></li>
-                                    <li><a href="{% url 'user_panel_dashboard' %}"><i class="fa fa-user"></i> پنل کاربری</a></li>
-                                    <li><a href="{% url 'logout_page' %}"><i class="fa fa-sign-out"></i> خروج</a></li>
-                                    {% else %}
-                                    <li><a href="{% url 'register_page' %}"><i class="fa fa-sign-in"></i> ثبت نام</a></li>
-                                    <li><a href="{% url 'login_page' %}"><i class="fa fa-sign-in"></i> ورود</a></li>
-                                {% endif %}
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!--/header-middle-->
+{#                                    {% endif %}#}
+{#                                    <li><a href="{% url 'user_basket_page' %}"><i class="fa fa-shopping-cart"></i> سبد خرید</a></li>#}
+{#                                    <li><a href="{% url 'user_panel_dashboard' %}"><i class="fa fa-user"></i> پنل کاربری</a></li>#}
+{#                                    <li><a href="{% url 'logout_page' %}"><i class="fa fa-sign-out"></i> خروج</a></li>#}
+{#                                    {% else %}#}
+{#                                    <li><a href="{% url 'register_page' %}"><i class="fa fa-sign-in"></i> ثبت نام</a></li>#}
+{#                                    <li><a href="{% url 'login_page' %}"><i class="fa fa-sign-in"></i> ورود</a></li>#}
+{#                                {% endif %}#}
+{#							</ul>#}
+{#						</div>#}
+{#					</div>#}
+{#				</div>#}
+{#			</div>#}
+{#		</div><!--/header-middle-->#}
 
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
@@ -87,18 +87,18 @@
 								<li>
                                     <a href="{% url 'index_page' %}" class="{% if request.resolver_match.url_name == 'index_page' %}active{% endif %}">خـانه</a>
                                 </li>
-								<li>
-                                    <a href="{% url 'product_list' %}" class ={% if request.resolver_match.url_name == 'product_list' %} active{% endif %} >فروشگـاه</a>
-                                </li>
-								<li>
-                                    <a href="{% url 'article_view' %}" class ={% if request.resolver_match.url_name == 'article_view' %} active{% endif %}>مقالات</a>
-                                </li>
-								<li>
-                                    <a href="{% url 'about_us' %}" class ={% if request.resolver_match.url_name == 'about_us' %} active{% endif %}>درباره مـا</a>
-                                </li>
-								<li>
-                                    <a href="{% url 'contact_us_page' %}" class ={% if request.resolver_match.url_name == 'contact_us_page' %} active{% endif %} >تماس با مـا</a>
-                                </li>
+{#								<li>#}
+{#                                    <a href="{% url 'product_list' %}" class ={% if request.resolver_match.url_name == 'product_list' %} active{% endif %} >فروشگـاه</a>#}
+{#                                </li>#}
+{#								<li>#}
+{#                                    <a href="{% url 'article_view' %}" class ={% if request.resolver_match.url_name == 'article_view' %} active{% endif %}>مقالات</a>#}
+{#                                </li>#}
+{#								<li>#}
+{#                                    <a href="{% url 'about_us' %}" class ={% if request.resolver_match.url_name == 'about_us' %} active{% endif %}>درباره مـا</a>#}
+{#                                </li>#}
+{#								<li>#}
+{#                                    <a href="{% url 'contact_us_page' %}" class ={% if request.resolver_match.url_name == 'contact_us_page' %} active{% endif %} >تماس با مـا</a>#}
+{#                                </li>#}
 							</ul>
 						</div>
 					</div>

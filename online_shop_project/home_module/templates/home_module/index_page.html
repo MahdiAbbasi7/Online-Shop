@@ -1,6 +1,6 @@
 {% extends 'shared/layout.html' %}
 {% load thumbnail %}
-{% load poll_axtras %}
+{#{% load poll_extras %}#}
 
 {% block title %}
     فروشگاه شخصی | صفحه اصلی
@@ -79,7 +79,7 @@
 
                 <div class="col-sm-12 padding-right">
                     <div class="features_items"><!--RetailSale_items-->
-                        <a href="shop-2.html"><h2 class="title text-center">پربازدیدترین محصولات</h2></a>
+                        <a href="../../../static/shop-2.html"><h2 class="title text-center">پربازدیدترین محصولات</h2></a>
                         <div id="new-item-carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 {% for group in most_visit_products %}
@@ -101,7 +101,7 @@
                     </div><!--RetailSale_items-->
 
                     <div class="features_items"><!--WholeSale_items-->
-                        <a href="shop.html"><h2 class="title text-center">پرفروش ترین محصولات</h2></a>
+                        <a href="../../../static/shop.html"><h2 class="title text-center">پرفروش ترین محصولات</h2></a>
                         <div id="major-item-carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="item active">
@@ -389,11 +389,11 @@
                                                         {% thumbnail product.image "268x250" quality=90 crop='center' as im %}
                                                             <img src="{{ im.url }}">
                                                         {% endthumbnail %}
-                                                        <h2>{{ product.price | three_digits_currency }}</h2>
+{#                                                        <h2>{{ product.price | three_digits_currency }}</h2>#}
                                                         <p>{{ product.title }}</p>
-                                                        <a href="{{ product.get_absolute_url }}"
-                                                           class="btn btn-default add-to-cart"><i
-                                                                class="fa fa-shopping-cart"></i>نمایش محصول</a>
+{#                                                        <a href="{{ product.get_absolute_url }}"#}
+{#                                                           class="btn btn-default add-to-cart"><i#}
+{#                                                                class="fa fa-shopping-cart"></i>نمایش محصول</a>#}
                                                     </div>
 
                                                 </div>
