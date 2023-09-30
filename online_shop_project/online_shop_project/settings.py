@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'site_module',
     'product_module',
     'order_module',
+    'user_panel_module',
     'polls',
     'sorl.thumbnail',
     'jalali_date',
