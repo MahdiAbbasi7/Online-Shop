@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'home_module',
     'site_module',
     'product_module',
+    'order_module',
     'polls',
     'sorl.thumbnail',
     'jalali_date',
@@ -157,4 +158,14 @@ MEDIA_URL = '/medias/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'abbasimahdi782@gmail.com'
+EMAIL_HOST_PASSWORD = 'dvrxvfomzkpzwizu'
+EMAIL_PORT = 587
 
+# SANDEBOX MODE
+
+MERCHANT = "00000000-0000-0000-0000-000000000000"
+SAND_BOX = True
